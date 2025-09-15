@@ -1,0 +1,25 @@
+# Dependency directories
+node_modules/
+
+# TypeScript output
+dist/
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.local
+
+# IDE/Editor
+.idea/
+.vscode/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Test files
+*.test.*
+*.spec.*

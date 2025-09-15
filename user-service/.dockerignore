@@ -1,0 +1,21 @@
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+
+# Environment files
+.env
+.env.*.local
+
+# Database files
+*.db
+*.sqlite
+
+# Logs
+*.log
+log/
+
+# IDE
+.idea/
+.vscode/

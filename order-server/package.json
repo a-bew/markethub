@@ -1,0 +1,49 @@
+{
+  "name": "user-ws-service",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
+    "build": "tsc --project tsconfig.json",
+    "start": "node -r module-alias/register dist/index.js",
+    "test": "bun test"
+  },
+  "_moduleAliases": {
+    "@": "dist"
+  },
+  "bun": {
+    "test": {
+      "exclude": [
+        "dist"
+      ]
+    }
+  },
+  "dependencies": {
+    "@socket.io/redis-adapter": "^8.3.0",
+    "amqplib": "^0.10.3",
+    "bun": "^1.2.20",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4",
+    "jsonwebtoken": "^9.0.2",
+    "module-alias": "^2.2.3",
+    "redis": "^5.8.0",
+    "socket.io": "^4.8.1",
+    "tsconfig-paths": "^4.2.0",
+    "ws": "^8.18.3",
+    "stripe": "^18.5.0"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/bun": "^1.2.20",
+    "@types/cookie": "^0.6.0",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/ws": "^8.18.1",
+    "bun-types": "^1.2.20",
+    "ts-node-dev": "^2",
+    "typescript": "^5"
+  },
+  "private": true
+}
